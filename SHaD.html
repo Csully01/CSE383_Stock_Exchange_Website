@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="https://thumbs.dreamstime.com/b/candlestick-trading-graph-isolated-png-transparent-background-investing-stocks-market-buy-sell-sign-vector-illustration-224529770.jpg">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
+    
+    <link rel="stylesheet" href="style.css">
+    
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js"></script>
+    
+    <title>Stock FindR</title>    
+
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <!-- Navigation Menu (from bootstrap doc)-->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+          <a class="navbar-brand" href="#">Stock FindR</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" 
+                  aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="stocks.html">Stocks</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="SHaD.html">Stock History/Display</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+    <!-- Start Content Here-->
+    <div class="container">
+        <h1>Stock History/Display</h1>
+        <p>This site will show you recent stocks you have looked up.</p>        
+        <form>
+          <label for="date-input">Select a date:</label>
+          <input type="date" id="date-input" name="date-input">
+
+          <label for="max-lines-input">Maximum number of lines:</label>
+          <input type="number" id="max-lines-input" name="max-lines-input" min="1" max="100">
+
+          <button type="submit" class="btn btn-primary" id="submit-btn">Submit</button>
+        </form>
+        <table class="table table-striped" id="history-table">
+          <thead>
+          </thead>
+          <tbody></tbody>
+        </table>
+    </div>
+
+</body>
+</html>

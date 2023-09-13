@@ -1,0 +1,28 @@
+
+body {
+    background-image: url('./images/beanstalk.webp');
+}
+p {
+    font-size: 25px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.dropdown-menu {
+    max-height: 200px;
+    overflow-y: auto;
+    max-width: 500px;
+  }
+  .history-table{
+    font-size: 15px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+@media (max-width: 576px) {
+    .container {
+        max-width: 100%;
+        padding: 0 30px;
+        display: inline-block;
+    }
+    img {
+        max-width: 80%;
+        width: 40%;
+      }
+}
